@@ -3,14 +3,7 @@
 }
 
 html {
-  --bg: #efefef;
-  --fg: #1e1e1e;
-  --gray: #555;
-  --light-gray: #ccc;
-  --shadow: #e6e6e6;
-  --success: rgb(90, 206, 132);
-  --primary: #FF585D;
-  --secondary: #0072CE;
+
 
   background-color: var(--bg);
   color: var(--fg);
