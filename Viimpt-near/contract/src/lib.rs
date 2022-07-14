@@ -16,8 +16,8 @@ static ALLOC: near_sdk::wee_alloc::WeeAlloc = near_sdk::wee_alloc::WeeAlloc::INI
 
 type WrappedTimestamp = U64;
 
-/// Voting contract for unlocking transfers. Once the majority of the stake holders agree to
-/// unlock transfer, the time will be recorded and the voting ends.
+/// Voting contract for unlocking transfers.
+/// Once the majority of the stake holders agree to unlock transfer, the time will be recorded and the voting ends.
 #[near_bindgen]
 #[derive(BorshDeserialize, BorshSerialize)]
 pub struct VotingContract {
@@ -31,7 +31,7 @@ pub struct VotingContract {
     last_epoch_height: EpochHeight,
 }
 
-// Define the default, which automatically initializes the contract
+// Define the default, which automatically initializes the contract.
 impl Default for VotingContract {
     fn default() -> Self {
         env::panic(b"Voting contract should be initialized before usage")
@@ -70,24 +70,9 @@ impl VotingContract {
         }
     }
 
-    /// Returns `true` if the contract state exists and `false` otherwise.
+/// Returns `true` if the contract state exists and `false` otherwise.
 pub fn state_exists() -> bool {
     storage_has_key(STATE_KEY)
-}
-
-/// Voting contract for unlocking transfers. Once the majority of the stake holders agree to
-/// unlock transfer, the time will be recorded and the voting ends.
-#[near_bindgen]
-#[derive(BorshDeserialize, BorshSerialize)]
-pub struct VotingContract {
-    /// How much each validator votes
-    votes: HashMap<AccountId, Balance>,
-    /// Total voted balance so far.
-    total_voted_stake: Balance,
-    /// When the voting ended. `None` means the poll is still open.
-    result: Option<WrappedTimestamp>,
-    /// Epoch height when the contract is touched last time.
-    last_epoch_height: EpochHeight,
 }
 
 /// Method for validators to vote or withdraw the vote.
