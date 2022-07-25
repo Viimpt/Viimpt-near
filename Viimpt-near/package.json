@@ -11,8 +11,8 @@
     "dev": "nodemon --watch contract -e ts --exec \"npm run start\"",
     "test": "npm run build:contract && npm run test:unit && npm run test:integration",
       "test:unit": "cd contract && cargo test",
+      "test:testnet": "ava --config ./ava.testnet.config.cjs",
       "test:integration": "npm run deploy && cd integration-tests && npm run test",
-        "test:integration:ts": "echo not supported",
         "test:integration:ts": "echo not supported"
   },
   "devDependencies": {
