@@ -49,3 +49,4 @@ export async function get_greeting(){
   let greeting = await window.contract.get_greeting()
   return greeting
 }
+
