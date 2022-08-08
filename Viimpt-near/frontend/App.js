@@ -199,3 +199,30 @@ function Notification() {
     </aside>
   )
 }
+
+
+
+// import React from "react";
+// import login from "./src/login";
+// import Modal from "./src/modal";
+// import ModalBack from "./src/ModalBack";
+// import Input from "./src/Input";
+// import { HashRouter, Route } from 'react-router-dom';
+
+// function App(){
+//   return (
+//     <HashRouter>
+//       <switch>
+//           <Route path={''} component={Main}/>
+//       </switch>
+//       <switch>
+//           <Route path={''} component={Menu}/>
+//       </switch>
+//       <switch>
+//           <Route path={''} component={Login}/>
+//       </switch>
+//     </HashRouter>
+//   );
+// }
+
+// export default App;
