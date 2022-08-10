@@ -1,12 +1,12 @@
-import React from "react";
-import { Route, Routes } from "react-router-dom";
-import Home from "./containers/Home";
-import NotFound from "./containers/NotFound";
-
-export default function Links() {
-  return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-    </Routes>
-  );
-} <Route path="*" element={<NotFound />} />;
+import React, {Component} from 'react';
+import { Link } from 'react-router-dom';
+class Routes extends Component{
+  render(){
+    return (
+      <>
+        <Link to={'/Routes'}>reactRoutes</Link>
+      </>
+    )
+  }
+}
+export default Routes;
