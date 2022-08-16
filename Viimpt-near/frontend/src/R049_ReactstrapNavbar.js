@@ -18,10 +18,13 @@ class R049_ReactstrapNavbar extends Component{
                 <Collapse isOpen={this.state.collapsed} navbar >
                     <Nav navbar>
                         <NavItem>
-                            <NavLink href="#"> react </NavLink>
+                            <NavLink href="#"> Notice</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="www.google.com"> 200 </NavLink>
+                            <NavLink href="#"> Login </NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink href="#"> Vote</NavLink>
                         </NavItem>
                     </Nav>
                 </Collapse>
