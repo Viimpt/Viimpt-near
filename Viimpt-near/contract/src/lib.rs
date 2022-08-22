@@ -126,4 +126,6 @@ impl VotingContract {
             .map(|(account_id, stake)| (account_id.clone(), (*stake).into()))
             .collect()
     }
+    
 }
+//#[cfg(test)]
