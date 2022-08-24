@@ -1,13 +1,14 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
-import palette from '../../lib/styles/palette';
-import Button from '../common/Button';
+import React from "react";
+import styled from "styled-components";
+import { Link } from "react-router-dom";
+import palette from "../../lib/styles/palette";
+import Button from "../common/Button";
+import { KAKAO_AUTH_URL } from "./OAuth";
 
 /**
  * 회원가입 또는 로그인 폼을 보여줍니다.
  */
-
+//const code = new URL(window.location.href).searchParams.get("code");
 const AuthFormBlock = styled.div`
   h3 {
     margin: 0;
@@ -53,10 +54,13 @@ const Footer = styled.div`
 const ButtonWithMarginTop = styled(Button)`
   margin-top: 1rem;
 `;
-
+const KakaoBtn = styled(Button)`
+  margin-top: 1rem;
+  padding-left: 1rem;
+`;
 const textMap = {
-  login: '로그인',
-  register: '회원가입',
+  login: "로그인",
+  register: "회원가입",
 };
 
 /**
@@ -71,6 +75,10 @@ const ErrorMessage = styled.div`
 
 const AuthForm = ({ type, form, onChange, onSubmit, error }) => {
   const text = textMap[type];
+  const REST_API_KEY = "4fba7ad866b206ac591dad33e244185b";
+  const REDIRECT_URI = "http://localhost:3000/oauth/kakao/callback";
+  const KAKAO_AUTH_URL = `https://kauth.kakao.com/oauth/authorize?client_id=${REST_API_KEY}&redirect_uri=${REDIRECT_URI}&response_type=code`;
+
   return (
     <AuthFormBlock>
       <h3>{text}</h3>
@@ -90,7 +98,7 @@ const AuthForm = ({ type, form, onChange, onSubmit, error }) => {
           onChange={onChange}
           value={form.password}
         />
-        {type === 'register' && (
+        {type === "register" && (
           <StyledInput
             autoComplete="new-password"
             name="passwordConfirm"
@@ -101,12 +109,16 @@ const AuthForm = ({ type, form, onChange, onSubmit, error }) => {
           />
         )}
         {error && <ErrorMessage>{error}</ErrorMessage>}
-        <ButtonWithMarginTop cyan fullWidth style={{ marginTop: '1rem' }}>
+        <ButtonWithMarginTop cyan fullWidth style={{ marginTop: "1rem" }}>
           {text}
         </ButtonWithMarginTop>
       </form>
+
       <Footer>
-        {type === 'login' ? (
+        <KakaoBtn href={KAKAO_AUTH_URL}>
+          <span>카카오 로그인</span>
+        </KakaoBtn>
+        {type === "login" ? (
           <Link to="/register">회원가입</Link>
         ) : (
           <Link to="/login">로그인</Link>
