@@ -1,8 +1,8 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
-import Responsive from './Responsive';
-import Button from './Button';
+import React from "react";
+import styled from "styled-components";
+import { Link } from "react-router-dom";
+import Responsive from "./Responsive";
+import Button from "./Button";
 
 const HeaderBlock = styled.div`
   position: fixed;
@@ -57,6 +57,7 @@ const Header = ({ user, onLogout }) => {
             </div>
           ) : (
             <div className="right">
+              <Button to="/PostPage">투표</Button>
               <Button to="/login">로그인</Button>
             </div>
           )}
