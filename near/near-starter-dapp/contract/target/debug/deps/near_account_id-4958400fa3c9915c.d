@@ -1,0 +1,10 @@
+/Users/bag-eunseong/Desktop/Viimpt/near/near-starter-dapp/contract/target/debug/deps/near_account_id-4958400fa3c9915c.rmeta: /Users/bag-eunseong/.cargo/registry/src/github.com-1ecc6299db9ec823/near-account-id-0.13.0/src/lib.rs /Users/bag-eunseong/.cargo/registry/src/github.com-1ecc6299db9ec823/near-account-id-0.13.0/src/errors.rs /Users/bag-eunseong/.cargo/registry/src/github.com-1ecc6299db9ec823/near-account-id-0.13.0/src/borsh.rs /Users/bag-eunseong/.cargo/registry/src/github.com-1ecc6299db9ec823/near-account-id-0.13.0/src/serde.rs
+
+/Users/bag-eunseong/Desktop/Viimpt/near/near-starter-dapp/contract/target/debug/deps/libnear_account_id-4958400fa3c9915c.rlib: /Users/bag-eunseong/.cargo/registry/src/github.com-1ecc6299db9ec823/near-account-id-0.13.0/src/lib.rs /Users/bag-eunseong/.cargo/registry/src/github.com-1ecc6299db9ec823/near-account-id-0.13.0/src/errors.rs /Users/bag-eunseong/.cargo/registry/src/github.com-1ecc6299db9ec823/near-account-id-0.13.0/src/borsh.rs /Users/bag-eunseong/.cargo/registry/src/github.com-1ecc6299db9ec823/near-account-id-0.13.0/src/serde.rs
+
+/Users/bag-eunseong/Desktop/Viimpt/near/near-starter-dapp/contract/target/debug/deps/near_account_id-4958400fa3c9915c.d: /Users/bag-eunseong/.cargo/registry/src/github.com-1ecc6299db9ec823/near-account-id-0.13.0/src/lib.rs /Users/bag-eunseong/.cargo/registry/src/github.com-1ecc6299db9ec823/near-account-id-0.13.0/src/errors.rs /Users/bag-eunseong/.cargo/registry/src/github.com-1ecc6299db9ec823/near-account-id-0.13.0/src/borsh.rs /Users/bag-eunseong/.cargo/registry/src/github.com-1ecc6299db9ec823/near-account-id-0.13.0/src/serde.rs
+
+/Users/bag-eunseong/.cargo/registry/src/github.com-1ecc6299db9ec823/near-account-id-0.13.0/src/lib.rs:
+/Users/bag-eunseong/.cargo/registry/src/github.com-1ecc6299db9ec823/near-account-id-0.13.0/src/errors.rs:
+/Users/bag-eunseong/.cargo/registry/src/github.com-1ecc6299db9ec823/near-account-id-0.13.0/src/borsh.rs:
+/Users/bag-eunseong/.cargo/registry/src/github.com-1ecc6299db9ec823/near-account-id-0.13.0/src/serde.rs:
