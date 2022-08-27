@@ -1,4 +1,5 @@
-near-blank-project
+Viimpt is Amazing!
+
 ==================
 
 This [React] app was initialized with [create-near-app]
