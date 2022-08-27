@@ -3,6 +3,10 @@ use near_sdk::json_types::{U128, U64};
 use near_sdk::{env, near_bindgen, AccountId, Balance, EpochHeight};
 use std::collections::HashMap;
 
+<<<<<<< HEAD
+=======
+#[cfg(all(feature = "wee_alloc", target_arch = "wasm32"))]
+>>>>>>> aa470f00cc87dd97f3478e15c8603135ca448e4c
 #[global_allocator]
 static ALLOC: near_sdk::wee_alloc::WeeAlloc = near_sdk::wee_alloc::WeeAlloc::INIT;
 
