@@ -1,14 +1,17 @@
 import React from "react";
 import HeaderContainer from "../containers/common/HeaderContainer";
-import PostList from "../components/posts/PostList";
+import NewsList from "../components/common/NewsList";
+
 //95b8d71da2cc44268cde62d495c1e41b
-const PostListPage = () => {
+const HomePage = () => {
   return (
     <>
       <HeaderContainer />
-      <PostList />
+      <div>
+        <NewsList />
+      </div>
     </>
   );
 };
 
-export default PostListPage;
+export default HomePage;

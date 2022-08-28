@@ -23,6 +23,7 @@ const buttonStyle = css`
     css`
       padding-top: 0.75rem;
       padding-bottom: 0.75rem;
+      padding-left: 0.75rem;
       width: 100%;
       font-size: 1.125rem;
     `}
