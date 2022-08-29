@@ -1,6 +1,8 @@
 import React from "react";
 import CloseButton from "../../node_modules/react-bootstrap/esm/CloseButton";
 import Carousel from "react-bootstrap/Carousel";
+import Button from "react-bootstrap/Button";
+import Modal from "react-modal";
 
 import styled from "styled-components";
 import palette from "../lib/styles/palette";
@@ -20,12 +22,38 @@ const AuthTemplateBlock = styled.div`
   justify-content: center;
   align-items: center;
 `;
+const customStyles = {
+  content: {
+    top: "50%",
+    left: "50%",
+    right: "auto",
+    bottom: "auto",
+    marginRight: "-50%",
+    transform: "translate(-50%, -50%)",
+  },
+};
 
 function PostPage() {
+  const handleClick = () => {};
+  let subtitle;
+  const [modalIsOpen, setIsOpen] = React.useState(false);
+  function openModal() {
+    setIsOpen(true);
+  }
+
+  function afterOpenModal() {
+    // references are now sync'd and can be accessed.
+    subtitle.style.color = "#f00";
+  }
+
+  function closeModal() {
+    setIsOpen(false);
+  }
+
   return (
     <>
       <AuthTemplateBlock>
-        <CloseButton />
+        <CloseButton href="/" />
         <Carousel variant="white">
           <Carousel.Item>
             <img
@@ -34,7 +62,9 @@ function PostPage() {
               alt="First slide"
             />
             <Carousel.Caption>
-              <h5>First slide label</h5>
+              <Button variant="outline-primary" size="lg" onClick={openModal}>
+                투표
+              </Button>{" "}
               <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
             </Carousel.Caption>
           </Carousel.Item>
@@ -45,7 +75,9 @@ function PostPage() {
               alt="Second slide"
             />
             <Carousel.Caption>
-              <h5>Second slide label</h5>
+              <Button variant="outline-primary" size="lg" onClick={openModal}>
+                투표
+              </Button>{" "}
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </Carousel.Caption>
           </Carousel.Item>
@@ -56,13 +88,26 @@ function PostPage() {
               alt="Third slide"
             />
             <Carousel.Caption>
-              <h5>Third slide label</h5>
+              <Button variant="outline-primary" size="lg" onClick={openModal}>
+                투표
+              </Button>{" "}
               <p>
                 Praesent commodo cursus magna, vel scelerisque nisl consectetur.
               </p>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
+        <Modal
+          isOpen={modalIsOpen}
+          onAfterOpen={afterOpenModal}
+          onRequestClose={closeModal}
+          style={customStyles}
+          contentLabel="Example Modal"
+        >
+          <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Hello</h2>
+          <Button onClick={closeModal}>close</Button>
+          <div>I am a modal</div>
+        </Modal>
       </AuthTemplateBlock>
     </>
   );
