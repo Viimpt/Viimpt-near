@@ -1,5 +1,5 @@
 import React from "react";
-import CloseButton from "../../node_modules/react-bootstrap/esm/CloseButton";
+
 import Carousel from "react-bootstrap/Carousel";
 import Button from "react-bootstrap/Button";
 import Modal from "react-modal";
@@ -34,7 +34,10 @@ const customStyles = {
 };
 
 function PostPage() {
-  const handleClick = () => {};
+  function handleClick(e) {
+    e.preventDefault();
+    console.log("The link was clicked.");
+  }
   let subtitle;
   const [modalIsOpen, setIsOpen] = React.useState(false);
   function openModal() {
@@ -53,7 +56,10 @@ function PostPage() {
   return (
     <>
       <AuthTemplateBlock>
-        <CloseButton href="/" />
+        <Button href="/postList" variant="info" size="lg">
+          뒤로 가기
+        </Button>
+        {""}
         <Carousel variant="white">
           <Carousel.Item>
             <img
