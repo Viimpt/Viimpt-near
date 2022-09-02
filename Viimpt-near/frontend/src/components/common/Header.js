@@ -1,72 +1,54 @@
-import React from "react";
-import styled from "styled-components";
-import { Link } from "react-router-dom";
-import Responsive from "./Responsive";
-import Button from "./Button";
+import Button from "react-bootstrap/Button";
+import Container from "react-bootstrap/Container";
+import Form from "react-bootstrap/Form";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from "react-bootstrap/NavDropdown";
+import Offcanvas from "react-bootstrap/Offcanvas";
 
-const HeaderBlock = styled.div`
-  position: fixed;
-  width: 100%;
-  background: white;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
-`;
-
-/**
- * Responsive 컴포넌트의 속성에 스타일을 추가해서 새로운 컴포넌트 생성
- */
-const Wrapper = styled(Responsive)`
-  height: 4rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between; /* 자식 엘리먼트 사이에 여백을 최대로 설정 */
-  .logo {
-    font-size: 1.125rem;
-    font-weight: 800;
-    letter-spacing: 2px;
-  }
-  .right {
-    display: flex;
-    align-items: center;
-  }
-`;
-
-/**
- * 헤더가 fixed로 되어 있기 때문에 페이지의 컨텐츠가 4rem 아래 나타나도록 해주는 컴포넌트
- */
-const Spacer = styled.div`
-  height: 4rem;
-`;
-
-const UserInfo = styled.div`
-  font-weight: 800;
-  margin-right: 1rem;
-`;
-
-const Header = ({ user, onLogout }) => {
+function Header() {
   return (
     <>
-      <HeaderBlock>
-        <Wrapper>
-          <Link to="/" className="logo">
-            VIIMPT
-          </Link>
-          {user ? (
-            <div className="right">
-              <Button to="/postList">투표</Button>
-              <UserInfo>{user.username}</UserInfo>
-              <Button onClick={onLogout}>로그아웃</Button>
-            </div>
-          ) : (
-            <div className="right">
-              <Button to="/postList">투표</Button>
-              <Button to="/login">로그인</Button>
-            </div>
-          )}
-        </Wrapper>
-      </HeaderBlock>
-      <Spacer />
+      {[false].map((expand) => (
+        <Navbar key={expand} bg="light" expand={expand} className="mb-3">
+          <Container fluid>
+            <Navbar.Brand href="/" className="title">
+              VIIMPT
+            </Navbar.Brand>
+
+            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
+            <Navbar.Offcanvas
+              id={`offcanvasNavbar-expand-${expand}`}
+              aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
+              placement="end"
+            >
+              <Offcanvas.Header closeButton>
+                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
+                  VIIMPT
+                </Offcanvas.Title>
+              </Offcanvas.Header>
+              <Offcanvas.Body>
+                <Nav className="justify-content-end flex-grow-1 pe-3">
+                  <Nav.Link href="/">Home</Nav.Link>
+                  <Nav.Link href="/postList">투표하러가기</Nav.Link>
+                  <NavDropdown.Divider />
+                </Nav>
+                <Form className="d-flex">
+                  <Form.Control
+                    type="search"
+                    placeholder="Search"
+                    className="me-2"
+                    aria-label="Search"
+                  />
+                  <Button variant="outline-success">Search</Button>
+                </Form>
+              </Offcanvas.Body>
+            </Navbar.Offcanvas>
+          </Container>
+        </Navbar>
+      ))}
     </>
   );
-};
+}
 
 export default Header;
