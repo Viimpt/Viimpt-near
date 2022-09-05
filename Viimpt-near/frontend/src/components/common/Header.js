@@ -1,4 +1,4 @@
-import Button from "react-bootstrap/Button";
+import Button from "./Button";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
@@ -15,7 +15,6 @@ function Header() {
             <Navbar.Brand href="/" className="title">
               VIIMPT
             </Navbar.Brand>
-
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
