@@ -11,24 +11,23 @@ const HomePage = () => {
   return (
     <>
       <HeaderContainer />
-      <div>
-        <Tabs
-          defaultActiveKey="profile"
-          id="fill-tab-example"
-          className="mb-3"
-          fill
-        >
-          <Tab eventKey="news" title="실시간 뉴스">
-            <NewsList />
-          </Tab>
-          <Tab eventKey="videos" title="실시간 동영상">
-            <VideoList />
-          </Tab>
-          <Tab eventKey="results" title="투표 결과">
-            <ResultList />
-          </Tab>
-        </Tabs>
-      </div>
+
+      <Tabs
+        defaultActiveKey="profile"
+        id="fill-tab-example"
+        className="mb-3"
+        fill
+      >
+        <Tab eventKey="news" title="실시간 뉴스">
+          <NewsList />
+        </Tab>
+        <Tab eventKey="videos" title="실시간 동영상">
+          <VideoList />
+        </Tab>
+        <Tab eventKey="results" title="투표 결과">
+          <ResultList />
+        </Tab>
+      </Tabs>
     </>
   );
 };

@@ -43,11 +43,11 @@ const NewsItem = ({ article }) => {
         </div>
       )}
       <div className="contents">
-        <h2>
+        <h3 sytle={{}}>
           <a href={url} target="_blank" rel="noopener noreferrer">
             {title}
           </a>
-        </h2>
+        </h3>
         <p>{description}</p>
       </div>
     </NewsItemBlock>

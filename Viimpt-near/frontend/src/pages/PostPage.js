@@ -7,6 +7,7 @@ import Modal from "react-modal";
 import styled from "styled-components";
 import palette from "../lib/styles/palette";
 
+import "../App.css";
 //import "bootstrap/dist/css/bootstrap.min.css";
 
 const AuthTemplateBlock = styled.div`
@@ -28,7 +29,7 @@ const customStyles = {
     left: "50%",
     right: "auto",
     bottom: "auto",
-    marginRight: "-50%",
+    marginRight: "-100%",
     transform: "translate(-50%, -50%)",
   },
 };
@@ -37,18 +38,13 @@ function PostPage() {
   function handleClick(e) {
     e.preventDefault();
     console.log("The link was clicked.");
+    window.alert("투표를 완료하였습니다!");
+    window.location.replace("/");
   }
-  let subtitle;
   const [modalIsOpen, setIsOpen] = React.useState(false);
   function openModal() {
     setIsOpen(true);
   }
-
-  function afterOpenModal() {
-    // references are now sync'd and can be accessed.
-    subtitle.style.color = "#f00";
-  }
-
   function closeModal() {
     setIsOpen(false);
   }
@@ -105,14 +101,17 @@ function PostPage() {
         </Carousel>
         <Modal
           isOpen={modalIsOpen}
-          onAfterOpen={afterOpenModal}
           onRequestClose={closeModal}
           style={customStyles}
           contentLabel="Example Modal"
         >
-          <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Hello</h2>
-          <Button onClick={closeModal}>close</Button>
-          <div>I am a modal</div>
+          <h2>투표하시겠습니까?</h2>
+          <Button className="btn" onClick={handleClick}>
+            네
+          </Button>
+          <Button variant="secondary" onClick={closeModal}>
+            close
+          </Button>
         </Modal>
       </AuthTemplateBlock>
     </>
