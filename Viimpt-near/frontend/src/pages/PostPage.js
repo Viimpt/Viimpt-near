@@ -106,7 +106,7 @@ function PostPage() {
           contentLabel="Example Modal"
         >
           <h2>투표하시겠습니까?</h2>
-          <Button className="btn" onClick={handleClick}>
+          <Button style={{ marginTop: "10px" }} onClick={handleClick}>
             네
           </Button>
           <Button variant="secondary" onClick={closeModal}>
