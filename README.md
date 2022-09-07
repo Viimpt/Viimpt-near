@@ -1,4 +1,4 @@
-# Viimpt(Voting Is IMPortanT
+# Viimpt(Voting Is IMPortanT)
 <h2>안녕하세요 저희는 5팀 BCNet 입니다. </h2>
 
 <h1> Home page </h1>
