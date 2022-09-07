@@ -2,6 +2,26 @@
 <h2>
 안녕하세요 저희는 5팀 BCNet 입니다. </h2>
 
+<h1> Home page </h1>
+<img width="848" alt="image" src="https://user-images.githubusercontent.com/96706954/188905437-dbf8e298-296e-401f-90b3-d5f5f205d0ee.png">
+
+<img width="846" alt="image" src="https://user-images.githubusercontent.com/96706954/188905581-80d4c993-bdca-4bbc-b759-7b54179eb1c8.png">
+
+<img width="844" alt="image" src="https://user-images.githubusercontent.com/96706954/188905668-6bf485fc-1dbb-4aa9-a6a6-ac7d6a49bf09.png">
+
+<img width="848" alt="image" src="https://user-images.githubusercontent.com/96706954/188905803-3f4923d1-fbf9-4f60-953f-5b3c4f16f9c0.png">
+
+<h1> Program List </h1>
+<img width="845" alt="image" src="https://user-images.githubusercontent.com/96706954/188906098-139166e4-d4c9-4c37-900d-e0cc077433f0.png">
+
+<h1> Voting Page </h1>
+<img width="848" alt="image" src="https://user-images.githubusercontent.com/96706954/188906211-7e3fe28f-e05f-44f8-ba56-e8b5f8008c87.png">
+
+<img width="849" alt="image" src="https://user-images.githubusercontent.com/96706954/188906364-345c5441-1cf7-466a-a3ed-0af8000078b6.png">
+
+<img width="849" alt="image" src="https://user-images.githubusercontent.com/96706954/188906399-79d4e81a-f92f-4e22-b447-a6306f186733.png">
+
+
 <h3> 1. Motive</h3>
 저희는 블록체인 전자투표 시스템을 구현하면서 블록체인 기술이 주는 투명성과 위조 불가능성을 적용할 분야를 모색했습니다.
 
