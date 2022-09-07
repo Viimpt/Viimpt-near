@@ -12,8 +12,7 @@ function PostList() {
         <Card.Body>
           <Card.Title>뮤직뱅크</Card.Title>
           <Card.Text>
-            뮤직뱅크(Music Bank)는 KBS 2TV에서 매주 금요일 오후 5시 10분에
-            방송되는, 가요톱10의 뒤를 이어 계보를 잇는 대중음악 순위 프로그램
+            뮤직뱅크(Music Bank)는 KBS 2TV에서 매주 금요일 오후 5시 10분에 방송
           </Card.Text>
           <Button variant="primary" href="/post">
             투표하러가기

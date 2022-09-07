@@ -109,7 +109,11 @@ function PostPage() {
           <Button style={{ marginTop: "10px" }} onClick={handleClick}>
             네
           </Button>
-          <Button variant="secondary" onClick={closeModal}>
+          <Button
+            style={{ marginTop: "10px" }}
+            variant="secondary"
+            onClick={closeModal}
+          >
             close
           </Button>
         </Modal>
