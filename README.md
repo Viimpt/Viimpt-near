@@ -1,6 +1,5 @@
-# Viimpt-near
-<h2>
-안녕하세요 저희는 5팀 BCNet 입니다. </h2>
+# Viimpt(Voting Is IMPortanT
+<h2>안녕하세요 저희는 5팀 BCNet 입니다. </h2>
 
 <h1> Home page </h1>
 <img width="848" alt="image" src="https://user-images.githubusercontent.com/96706954/188905437-dbf8e298-296e-401f-90b3-d5f5f205d0ee.png">
