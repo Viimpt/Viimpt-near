@@ -29,6 +29,7 @@ function Header() {
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
                   <Nav.Link href="/">Home</Nav.Link>
+                  <Nav.Link href="/login">Login</Nav.Link>
                   <Nav.Link href="/postList">투표하러가기</Nav.Link>
                   <NavDropdown.Divider />
                 </Nav>
