@@ -77,7 +77,6 @@ const AuthForm = ({ type, form, onChange, onSubmit, error }) => {
   const text = textMap[type];
   const REST_API_KEY = "4fba7ad866b206ac591dad33e244185b";
   const REDIRECT_URI = "http://localhost:3000/oauth/kakao/callback";
-  const KAKAO_AUTH_URL = `https://kauth.kakao.com/oauth/authorize?client_id=${REST_API_KEY}&redirect_uri=${REDIRECT_URI}&response_type=code`;
 
   return (
     <AuthFormBlock>
@@ -115,9 +114,6 @@ const AuthForm = ({ type, form, onChange, onSubmit, error }) => {
       </form>
 
       <Footer>
-        <KakaoBtn href={KAKAO_AUTH_URL}>
-          <span>카카오 로그인</span>
-        </KakaoBtn>
         {type === "login" ? (
           <Link to="/register">회원가입</Link>
         ) : (

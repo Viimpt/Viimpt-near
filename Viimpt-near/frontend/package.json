@@ -18,7 +18,11 @@
     "react": "^18.2.0",
     "react-bootstrap": "^2.5.0",
     "react-dom": "^18.2.0",
+<<<<<<< HEAD
     "react-modal": "^3.15.1",
+=======
+    "react-player": "^2.10.1",
+>>>>>>> d18cf874c7ba622d8e34812dfb5c691ac50f8f1f
     "react-redux": "^8.0.2",
     "react-router-dom": "^6.3.0",
     "react-scripts": "^5.0.1",

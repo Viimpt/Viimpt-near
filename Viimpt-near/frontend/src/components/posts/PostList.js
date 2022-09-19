@@ -1,82 +1,60 @@
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-import Stack from "react-bootstrap/Stack";
+import CardGroup from "react-bootstrap/CardGroup";
 
-import styled from "styled-components";
-import palette from "../../lib/styles/palette";
 import "bootstrap/dist/css/bootstrap.min.css";
-
-const AuthTemplateBlock = styled.div`
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  background: ${palette.gray[2]};
-  /* flex로 내부 내용 중앙 정렬 */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-`;
-
-const cardStyleBlock = styled.div``;
 
 function PostList() {
   return (
-    <AuthTemplateBlock>
-      <Stack direction="horizontal" gap={2}>
-        <Card style={{ width: "18rem" }}>
-          <Card.Img variant="top" src="https://ifh.cc/g/XtykcM.webp" />
-          <Card.Body>
-            <Card.Title>Card Title</Card.Title>
-            <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </Card.Text>
-            <Button variant="primary" href="/post">
-              투표하러가기
-            </Button>
-          </Card.Body>
-        </Card>
+    <CardGroup>
+      <Card border="primary" style={{ width: "18rem" }}>
+        <Card.Img variant="top" src="https://ifh.cc/g/XtykcM.webp" />
+        <Card.Body>
+          <Card.Title>뮤직뱅크</Card.Title>
+          <Card.Text>
+            뮤직뱅크(Music Bank)는 KBS 2TV에서 매주 금요일 오후 5시 10분에 방송
+          </Card.Text>
+          <Button variant="primary" href="/post">
+            투표하러가기
+          </Button>
+        </Card.Body>
+      </Card>
 
-        <Card style={{ width: "18rem" }}>
-          <Card.Img variant="top" src="https://ifh.cc/g/HCkQZk.webp" />
-          <Card.Body>
-            <Card.Title>Card Title</Card.Title>
-            <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </Card.Text>
-            <Button variant="primary">투표하러가기</Button>
-          </Card.Body>
-        </Card>
+      <Card border="primary" style={{ width: "18rem" }}>
+        <Card.Img variant="top" src="https://ifh.cc/g/HCkQZk.webp" />
+        <Card.Body>
+          <Card.Title>인기가요</Card.Title>
+          <Card.Text>
+            SBS 가요 순위 프로그램으로 인기 가수들의 최신 음악을 들을 수 있는
+            프로그램
+          </Card.Text>
+          <Button variant="primary">투표하러가기</Button>
+        </Card.Body>
+      </Card>
 
-        <Card style={{ width: "18rem" }}>
-          <Card.Img variant="top" src="https://ifh.cc/g/ytjPnD.webp" />
-          <Card.Body>
-            <Card.Title>Card Title</Card.Title>
-            <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </Card.Text>
-            <Button variant="primary">투표하러가기</Button>
-          </Card.Body>
-        </Card>
+      <Card border="primary" style={{ width: "18rem" }}>
+        <Card.Img variant="top" src="https://ifh.cc/g/ytjPnD.webp" />
+        <Card.Body>
+          <Card.Title>음악중심</Card.Title>
+          <Card.Text>
+            《쇼! 음악중심》은 매주 토요일 오후 3시 15분에 방송되는 음악
+            프로그램
+          </Card.Text>
+          <Button variant="primary">투표하러가기</Button>
+        </Card.Body>
+      </Card>
 
-        <Card style={{ width: "18rem" }}>
-          <Card.Img variant="top" src="https://ifh.cc/g/6yzL7z.webp/" />
-          <Card.Body>
-            <Card.Title>Card Title</Card.Title>
-            <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </Card.Text>
-            <Button variant="primary">투표하러가기</Button>
-          </Card.Body>
-        </Card>
-      </Stack>
-    </AuthTemplateBlock>
+      <Card border="primary" style={{ width: "18rem" }}>
+        <Card.Img variant="top" src="https://ifh.cc/g/6yzL7z.webp/" />
+        <Card.Body>
+          <Card.Title>엠카운트다운</Card.Title>
+          <Card.Text>
+            M COUNTDOWN WORLD NO.1 KPOP CHART SHOW 매주 목요일 6시 생방송!
+          </Card.Text>
+          <Button variant="primary">투표하러가기</Button>
+        </Card.Body>
+      </Card>
+    </CardGroup>
   );
 }
 
