@@ -18,8 +18,6 @@
 <h1> Voting Page </h1>
 <img width="848" alt="image" src="https://user-images.githubusercontent.com/96706954/188906211-7e3fe28f-e05f-44f8-ba56-e8b5f8008c87.png">
 
-<img width="849" alt="image" src="https://user-images.githubusercontent.com/96706954/188906364-345c5441-1cf7-466a-a3ed-0af8000078b6.png">
-
 <img width="1440" alt="image" src="https://user-images.githubusercontent.com/96706954/191141376-8fcad941-d878-4c91-a296-d19f4cad2310.png">
 
 
