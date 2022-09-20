@@ -8,6 +8,8 @@
 
 <img width="844" alt="image" src="https://user-images.githubusercontent.com/96706954/188905668-6bf485fc-1dbb-4aa9-a6a6-ac7d6a49bf09.png">
 
+<img width="1440" alt="image" src="https://user-images.githubusercontent.com/96706954/191141320-f1b5edd3-c01c-4e3b-ae1f-ab00eca94f4e.png">
+
 <img width="848" alt="image" src="https://user-images.githubusercontent.com/96706954/188905803-3f4923d1-fbf9-4f60-953f-5b3c4f16f9c0.png">
 
 <h1> Program List </h1>
@@ -18,7 +20,7 @@
 
 <img width="849" alt="image" src="https://user-images.githubusercontent.com/96706954/188906364-345c5441-1cf7-466a-a3ed-0af8000078b6.png">
 
-<img width="849" alt="image" src="https://user-images.githubusercontent.com/96706954/188906399-79d4e81a-f92f-4e22-b447-a6306f186733.png">
+<img width="1440" alt="image" src="https://user-images.githubusercontent.com/96706954/191141376-8fcad941-d878-4c91-a296-d19f4cad2310.png">
 
 
 <h3> 1. Motive</h3>
