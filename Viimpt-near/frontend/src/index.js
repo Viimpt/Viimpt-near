@@ -2,6 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 
+//import near api
+import { Wallet } from "./near-wallet";
+import { Contract } from "./near-interface";
+
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter } from "react-router-dom";
@@ -33,13 +37,20 @@ function loadUser() {
 sagaMiddleware.run(rootSaga);
 loadUser();
 
-ReactDOM.render(
-  <Provider store={store}>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </Provider>,
-  document.getElementById("root")
-);
-
+//wallet calling
+const contract = new Contract({
+  contractId: process.env.CONTRACT_NAME,
+  walletToUse: wallet,
+});
+const wallet = new Wallet({ createAccessKeyFor: process.env.CONTRACT_NAME });
+window.onload = async () => {
+  ReactDOM.render(
+    <Provider store={store}>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </Provider>,
+    document.getElementById("root")
+  );
+};
 serviceWorker.unregister();
