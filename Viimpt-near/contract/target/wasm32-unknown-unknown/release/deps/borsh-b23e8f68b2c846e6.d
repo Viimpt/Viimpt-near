@@ -1,0 +1,12 @@
+C:\Users\김명지\Documents\GitHub\Viimpt-near\Viimpt-near\contract\target\wasm32-unknown-unknown\release\deps\borsh-b23e8f68b2c846e6.rmeta: C:\Users\김명지\.cargo\registry\src\github.com-1ecc6299db9ec823\borsh-0.7.2\src/lib.rs C:\Users\김명지\.cargo\registry\src\github.com-1ecc6299db9ec823\borsh-0.7.2\src\de\mod.rs C:\Users\김명지\.cargo\registry\src\github.com-1ecc6299db9ec823\borsh-0.7.2\src\de\hint.rs C:\Users\김명지\.cargo\registry\src\github.com-1ecc6299db9ec823\borsh-0.7.2\src\schema.rs C:\Users\김명지\.cargo\registry\src\github.com-1ecc6299db9ec823\borsh-0.7.2\src\schema_helpers.rs C:\Users\김명지\.cargo\registry\src\github.com-1ecc6299db9ec823\borsh-0.7.2\src\ser\mod.rs
+
+C:\Users\김명지\Documents\GitHub\Viimpt-near\Viimpt-near\contract\target\wasm32-unknown-unknown\release\deps\libborsh-b23e8f68b2c846e6.rlib: C:\Users\김명지\.cargo\registry\src\github.com-1ecc6299db9ec823\borsh-0.7.2\src/lib.rs C:\Users\김명지\.cargo\registry\src\github.com-1ecc6299db9ec823\borsh-0.7.2\src\de\mod.rs C:\Users\김명지\.cargo\registry\src\github.com-1ecc6299db9ec823\borsh-0.7.2\src\de\hint.rs C:\Users\김명지\.cargo\registry\src\github.com-1ecc6299db9ec823\borsh-0.7.2\src\schema.rs C:\Users\김명지\.cargo\registry\src\github.com-1ecc6299db9ec823\borsh-0.7.2\src\schema_helpers.rs C:\Users\김명지\.cargo\registry\src\github.com-1ecc6299db9ec823\borsh-0.7.2\src\ser\mod.rs
+
+C:\Users\김명지\Documents\GitHub\Viimpt-near\Viimpt-near\contract\target\wasm32-unknown-unknown\release\deps\borsh-b23e8f68b2c846e6.d: C:\Users\김명지\.cargo\registry\src\github.com-1ecc6299db9ec823\borsh-0.7.2\src/lib.rs C:\Users\김명지\.cargo\registry\src\github.com-1ecc6299db9ec823\borsh-0.7.2\src\de\mod.rs C:\Users\김명지\.cargo\registry\src\github.com-1ecc6299db9ec823\borsh-0.7.2\src\de\hint.rs C:\Users\김명지\.cargo\registry\src\github.com-1ecc6299db9ec823\borsh-0.7.2\src\schema.rs C:\Users\김명지\.cargo\registry\src\github.com-1ecc6299db9ec823\borsh-0.7.2\src\schema_helpers.rs C:\Users\김명지\.cargo\registry\src\github.com-1ecc6299db9ec823\borsh-0.7.2\src\ser\mod.rs
+
+C:\Users\김명지\.cargo\registry\src\github.com-1ecc6299db9ec823\borsh-0.7.2\src/lib.rs:
+C:\Users\김명지\.cargo\registry\src\github.com-1ecc6299db9ec823\borsh-0.7.2\src\de\mod.rs:
+C:\Users\김명지\.cargo\registry\src\github.com-1ecc6299db9ec823\borsh-0.7.2\src\de\hint.rs:
+C:\Users\김명지\.cargo\registry\src\github.com-1ecc6299db9ec823\borsh-0.7.2\src\schema.rs:
+C:\Users\김명지\.cargo\registry\src\github.com-1ecc6299db9ec823\borsh-0.7.2\src\schema_helpers.rs:
+C:\Users\김명지\.cargo\registry\src\github.com-1ecc6299db9ec823\borsh-0.7.2\src\ser\mod.rs:

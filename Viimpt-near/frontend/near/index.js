@@ -8,7 +8,7 @@ document.querySelector('form').onsubmit = async (event) => {
   event.preventDefault()
 
   // get elements from the form using their id attribute
-  const { fieldset, donation } = event.target.elements
+  const { fieldset, donation } 0= event.target.elements
 
   // disable the form while the value gets updated on-chain
   fieldset.disabled = true
